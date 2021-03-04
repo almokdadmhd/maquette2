@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <section>
+      <div id="slider-animation" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://cpgolfacademy.com/wp-content/uploads/2015/05/home-testimonial-bg.jpg"
+              alt="Los Angeles"
+            />
+            <div class="text-box">
+              <h2 class="wow slideInRight" data-wow-duration="2s">
+                This is heading text
+              </h2>
+              <p class="wow slideInLeft" data-wow-duration="2s">
+                There is now an abundance of readable dummy texts. These are
+                usually used when a text is required purely to fill a space.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/9.jpg" alt="Los Angeles" />
+            <div class="text-box">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="wow fadeInUp" data-wow-duration="4s">
+                    This is heading text
+                  </h2>
+                  <p class="wow fadeInUp" data-wow-duration="2s">
+                    There is now an abundance of readable dummy texts. These are
+                    usually used when a text is required purely to fill a space.
+                  </p>
+                </div>
+                <div class="col-md-6 wow slideInLeft" data-wow-duration="4s">
+                  <img
+                    src="images/10.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/11.jpg"
+              alt="Chicago"
+            />
+            <div class="text-box">
+              <div class="row align-items-center">
+                <div class="col-md-6 wow slideInRight" data-wow-duration="4s">
+                  <h2>This is heading text</h2>
+                  <p>
+                    There is now an abundance of readable dummy texts. These are
+                    usually used when a text is required purely to fill a space.
+                  </p>
+                </div>
+                <div class="col-md-6 wow slideInLeft" data-wow-duration="4s">
+                  <img
+                    src="images/8.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a
+          class="carousel-control-prev"
+          href="#slider-animation"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#slider-animation"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        animateClass: "animated",
+        offset: 100,
+        callback: function (box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">");
+        },
+      });
+      wow.init();
+      document.getElementById("moar").onclick = function () {
+        var section = document.createElement("section");
+        section.className = "section--purple wow fadeInDown";
+        this.parentNode.insertBefore(section, this);
+      };
+    </script>
+  </body>
+</html>

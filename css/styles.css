@@ -1,0 +1,28 @@
+.heading-box h2{ width:100%; color: red; }
+.text-box {
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	right: 15%;
+	color: #fff;
+	text-align: center;
+	transform: translateY(-50%);
+}
+.slide{
+    background: gray;
+}
+.orange {
+background-color: darkorange;}
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  #image-gallery .modal-footer{
+    display: block;
+  }
+  
+  .thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
